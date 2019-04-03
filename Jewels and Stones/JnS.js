@@ -13,7 +13,20 @@
 var numJewelsInStones = function(J, S) {
   let foundJewels = 0;
   
-  
-  
+  let jewelArray = J.split('');
+ 
+  for (let i = 0; i < S.length; i++){
+    if (jewelArray.includes(S[i])){
+      foundJewels++;
+    }
+  }
+
   return foundJewels
 };
+
+// brief testing:
+
+let myJewels = 'aBc';
+let stoneBucket = 'aBcDeFgHiJkLmNoP'; 
+
+console.log(numJewelsInStones(myJewels, stoneBucket)); //expect 3 to be printed
