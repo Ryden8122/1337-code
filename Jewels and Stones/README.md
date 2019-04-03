@@ -1,4 +1,4 @@
-771. Jewels and Stones
+## leetcode prompt #771. Jewels and Stones
 Easy
 
 1328
